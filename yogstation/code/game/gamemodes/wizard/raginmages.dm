@@ -14,7 +14,6 @@
 	var/time_check = 1500
 	var/spawn_delay_min = 500
 	var/spawn_delay_max = 700
-	title_icon = "raginmages"
 
 /datum/game_mode/wizard/raginmages/post_setup()
 	..()

@@ -1,4 +1,7 @@
 //MAP CONVERTED BY dmm2tgm.py THIS HEADER COMMENT PREVENTS RECONVERSION, DO NOT REMOVE
+"a" = (
+/turf/closed/wall,
+/area/science/nanite)
 "b" = (
 /obj/structure/cable{
 	icon_state = "1-2"
@@ -373,7 +376,7 @@ d
 d
 "}
 (16,1,1) = {"
-c
+a
 c
 o
 c

@@ -8,8 +8,6 @@
 
 #define isappearance(A) (copytext("\ref[A]", 4, 6) == "3a")
 
-#define isnan(x) ( isnum((x)) && ((x) != (x)) )
-
 //Turfs
 //#define isturf(A) (istype(A, /turf)) This is actually a byond built-in. Added here for completeness sake.
 

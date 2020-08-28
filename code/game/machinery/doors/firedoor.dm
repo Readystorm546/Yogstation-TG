@@ -196,10 +196,7 @@
 	if(welded)
 		to_chat(user, "<span class='warning'>[src] refuses to budge!</span>")
 		return
-	if(user.a_intent == INTENT_HARM)
-		return ..()
-	else
-		open()
+	open()
 
 /obj/machinery/door/firedoor/do_animate(animation)
 	switch(animation)

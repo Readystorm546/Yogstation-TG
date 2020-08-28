@@ -60,6 +60,3 @@
 	. = ..()
 	C.weather_immunities -= "ash"
 // yogs end
-
-/datum/species/lizard/has_toes()
-	return TRUE

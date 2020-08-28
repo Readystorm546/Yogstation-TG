@@ -578,19 +578,11 @@
 /obj/machinery/nuclearbomb/beer/really_actually_explode()
 	disarm()
 
-
-/**
-  * Kills any mob on the z-level, assuming they're not in a freezer
-  *
-  * Arguments:
-  * * z - the z-level to kill people on
-  */
 /proc/KillEveryoneOnZLevel(z)
 	if(!z)
 		return
 	for(var/mob/M in GLOB.mob_list)
-		var/turf/t = get_turf(M)
-		if(M.stat != DEAD && t.z == z && !istype(M.loc, /obj/structure/closet/secure_closet/freezer))
+		if(M.stat != DEAD && M.z == z)
 			M.gib()
 
 /*

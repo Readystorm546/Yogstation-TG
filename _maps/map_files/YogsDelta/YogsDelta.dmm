@@ -3027,6 +3027,34 @@
 	icon_state = "wood-broken2"
 	},
 /area/crew_quarters/electronic_marketing_den)
+"afs" = (
+/obj/structure/cable/white{
+	icon_state = "0-4"
+	},
+/obj/machinery/power/apc{
+	areastring = "/area/hallway/secondary/entry";
+	dir = 1;
+	name = "Arrivals Hallway APC";
+	pixel_y = 24
+	},
+/obj/machinery/camera{
+	c_tag = "Arrivals - Center Port";
+	dir = 2;
+	name = "arrivals camera"
+	},
+/obj/effect/turf_decal/tile/blue{
+	dir = 4
+	},
+/obj/machinery/atmospherics/pipe/simple/supply/hidden/layer1{
+	dir = 8
+	},
+/obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer3{
+	dir = 4
+	},
+/turf/open/floor/plasteel/white/corner{
+	dir = 1
+	},
+/area/hallway/secondary/entry)
 "aft" = (
 /obj/structure/closet/emcloset,
 /obj/effect/turf_decal/delivery,
@@ -23611,15 +23639,6 @@
 	},
 /turf/open/floor/plasteel,
 /area/security/prison)
-"aMl" = (
-/obj/structure/rack,
-/obj/item/crowbar,
-/obj/item/tank/internals/emergency_oxygen/engi,
-/obj/item/stack/cable_coil/white,
-/obj/effect/turf_decal/bot,
-/obj/item/flashlight/flare/signal,
-/turf/open/floor/plasteel,
-/area/engine/engineering)
 "aMm" = (
 /obj/structure/table,
 /obj/item/clipboard,
@@ -24955,29 +24974,6 @@
 	},
 /turf/open/floor/plasteel,
 /area/crew_quarters/theatre)
-"aOw" = (
-/obj/machinery/cell_charger,
-/obj/structure/cable/white{
-	icon_state = "4-8"
-	},
-/obj/structure/table/reinforced,
-/obj/item/stock_parts/cell/high,
-/obj/effect/turf_decal/tile/neutral{
-	dir = 1
-	},
-/obj/effect/turf_decal/tile/neutral,
-/obj/effect/turf_decal/tile/neutral{
-	dir = 4
-	},
-/obj/effect/turf_decal/tile/neutral{
-	dir = 8
-	},
-/obj/item/flashlight/flare/signal{
-	pixel_x = 2;
-	pixel_y = 10
-	},
-/turf/open/floor/plasteel/dark,
-/area/ai_monitored/storage/eva)
 "aOx" = (
 /obj/structure/cable/white{
 	icon_state = "0-4"
@@ -35500,6 +35496,21 @@
 /obj/effect/turf_decal/tile/purple{
 	dir = 4
 	},
+/turf/open/floor/plasteel,
+/area/quartermaster/miningoffice)
+"beh" = (
+/obj/structure/table,
+/obj/item/pet_carrier/xenobio,
+/obj/item/pet_carrier/xenobio,
+/obj/item/extraction_pack,
+/obj/item/pet_carrier/xenobio,
+/obj/item/extraction_pack,
+/obj/item/extraction_pack,
+/obj/effect/turf_decal/tile/brown{
+	dir = 4
+	},
+/obj/effect/turf_decal/tile/brown,
+/obj/item/paper/fluff/stations/lavaland/slime_hunter,
 /turf/open/floor/plasteel,
 /area/quartermaster/miningoffice)
 "bei" = (
@@ -76484,6 +76495,14 @@
 	},
 /turf/open/floor/plating,
 /area/engine/engineering)
+"clW" = (
+/obj/structure/rack,
+/obj/item/crowbar,
+/obj/item/tank/internals/emergency_oxygen/engi,
+/obj/item/stack/cable_coil/white,
+/obj/effect/turf_decal/bot,
+/turf/open/floor/plasteel,
+/area/engine/engineering)
 "clX" = (
 /obj/structure/cable{
 	icon_state = "1-2"
@@ -84106,6 +84125,25 @@
 	dir = 6
 	},
 /turf/open/floor/plasteel,
+/area/ai_monitored/storage/eva)
+"cyq" = (
+/obj/machinery/cell_charger,
+/obj/structure/cable/white{
+	icon_state = "4-8"
+	},
+/obj/structure/table/reinforced,
+/obj/item/stock_parts/cell/high,
+/obj/effect/turf_decal/tile/neutral{
+	dir = 1
+	},
+/obj/effect/turf_decal/tile/neutral,
+/obj/effect/turf_decal/tile/neutral{
+	dir = 4
+	},
+/obj/effect/turf_decal/tile/neutral{
+	dir = 8
+	},
+/turf/open/floor/plasteel/dark,
 /area/ai_monitored/storage/eva)
 "cyr" = (
 /obj/structure/cable/white,
@@ -106949,7 +106987,7 @@
 /turf/open/floor/plasteel,
 /area/maintenance/port/aft)
 "dfH" = (
-/obj/machinery/bounty_board,
+/obj/structure/sign/nanotrasen,
 /turf/closed/wall,
 /area/medical/medbay/central)
 "dfI" = (
@@ -116098,6 +116136,22 @@
 /obj/machinery/door/firedoor/border_only,
 /turf/open/floor/plasteel,
 /area/maintenance/port/aft)
+"dss" = (
+/obj/effect/turf_decal/tile/neutral{
+	dir = 1
+	},
+/obj/effect/turf_decal/tile/neutral,
+/obj/effect/turf_decal/tile/neutral{
+	dir = 4
+	},
+/obj/effect/turf_decal/tile/neutral{
+	dir = 8
+	},
+/obj/structure/extraction_point{
+	name = "Xenobiology Fulton Retriever"
+	},
+/turf/open/floor/plasteel/dark,
+/area/science/xenobiology)
 "dst" = (
 /obj/structure/window/reinforced{
 	dir = 4
@@ -126222,34 +126276,6 @@
 	},
 /turf/open/floor/plasteel/dark,
 /area/bridge)
-"fOJ" = (
-/obj/structure/cable/white{
-	icon_state = "0-4"
-	},
-/obj/machinery/camera{
-	c_tag = "Arrivals - Center Port";
-	dir = 2;
-	name = "arrivals camera"
-	},
-/obj/effect/turf_decal/tile/blue{
-	dir = 4
-	},
-/obj/machinery/atmospherics/pipe/simple/supply/hidden/layer1{
-	dir = 8
-	},
-/obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer3{
-	dir = 4
-	},
-/obj/machinery/power/apc/highcap/fifteen_k{
-	areastring = "/area/hallway/secondary/entry";
-	dir = 1;
-	name = "Arrivals APC";
-	pixel_y = 24
-	},
-/turf/open/floor/plasteel/white/corner{
-	dir = 1
-	},
-/area/hallway/secondary/entry)
 "fSj" = (
 /obj/effect/turf_decal/stripes/line{
 	dir = 10
@@ -126368,14 +126394,6 @@
 	},
 /turf/open/floor/plasteel/dark,
 /area/engine/atmospherics_engine)
-"hbK" = (
-/obj/effect/turf_decal/tile/brown{
-	dir = 4
-	},
-/obj/effect/turf_decal/tile/brown,
-/obj/effect/decal/cleanable/dirt,
-/turf/open/floor/plasteel,
-/area/quartermaster/miningoffice)
 "hdH" = (
 /obj/effect/decal/cleanable/dirt,
 /obj/machinery/conveyor{
@@ -126431,10 +126449,6 @@
 /obj/effect/turf_decal/bot,
 /turf/open/floor/plasteel,
 /area/science/research)
-"ids" = (
-/obj/machinery/bounty_board,
-/turf/closed/wall/r_wall,
-/area/crew_quarters/heads/captain)
 "iiu" = (
 /obj/structure/cable/white{
 	icon_state = "4-8"
@@ -126446,10 +126460,6 @@
 /obj/machinery/cryopod,
 /turf/open/floor/plasteel,
 /area/security/prison)
-"isB" = (
-/obj/machinery/bounty_board,
-/turf/closed/wall/r_wall,
-/area/science/xenobiology)
 "ixL" = (
 /obj/structure/sign/warning/vacuum{
 	pixel_x = 32
@@ -126748,10 +126758,6 @@
 /obj/item/paper_bin,
 /turf/open/floor/plasteel,
 /area/crew_quarters/locker)
-"mjf" = (
-/obj/machinery/bounty_board,
-/turf/closed/wall,
-/area/hallway/secondary/service)
 "mvm" = (
 /obj/effect/decal/cleanable/dirt,
 /obj/structure/cable/white{
@@ -126798,10 +126804,6 @@
 /obj/machinery/vending/snack/random,
 /turf/open/floor/plasteel,
 /area/hallway/primary/central)
-"mSY" = (
-/obj/machinery/bounty_board,
-/turf/closed/wall/r_wall,
-/area/security/execution/transfer)
 "ncP" = (
 /obj/effect/landmark/xeno_spawn,
 /turf/open/floor/engine,
@@ -126870,6 +126872,10 @@
 	pixel_x = 32
 	},
 /obj/structure/table/reinforced,
+/obj/item/pet_carrier/xenobio,
+/obj/item/pet_carrier/xenobio,
+/obj/item/pet_carrier/xenobio,
+/obj/item/pet_carrier/xenobio,
 /obj/item/extinguisher,
 /obj/item/extinguisher,
 /turf/open/floor/circuit/green,
@@ -127436,10 +127442,6 @@
 /obj/machinery/door/firedoor/border_only,
 /turf/open/floor/engine,
 /area/engine/supermatter)
-"vjD" = (
-/obj/machinery/bounty_board,
-/turf/closed/wall,
-/area/engine/foyer)
 "vjX" = (
 /obj/structure/table/reinforced,
 /obj/machinery/door/poddoor/shutters/preopen{
@@ -151820,7 +151822,7 @@ cJQ
 cJT
 acR
 aSZ
-vjD
+aUl
 aZA
 bdC
 aZA
@@ -151840,7 +151842,7 @@ cfD
 chw
 cjg
 ckB
-aMl
+clW
 cnD
 cpb
 cqt
@@ -154176,7 +154178,7 @@ bNL
 cMY
 cMY
 cTA
-cNd
+dss
 cNd
 cYK
 cTA
@@ -160607,7 +160609,7 @@ cMY
 cMY
 cMY
 cMY
-isB
+cMY
 dgv
 cgv
 ceS
@@ -161813,7 +161815,7 @@ dqh
 aDI
 aDI
 auN
-mjf
+aDI
 aDI
 ehG
 cJE
@@ -163847,7 +163849,7 @@ abz
 abz
 abf
 abf
-fOJ
+afs
 aed
 aky
 aky
@@ -164955,7 +164957,7 @@ byX
 bLj
 cvo
 cwI
-aOw
+cyq
 czX
 cBn
 dUC
@@ -168272,7 +168274,7 @@ bBM
 bjk
 bzP
 bGU
-ids
+bIV
 bIV
 bMG
 bOP
@@ -173907,7 +173909,7 @@ azO
 aZf
 aQR
 bcF
-hbK
+beh
 bfF
 bfv
 bir
@@ -178550,7 +178552,7 @@ bnG
 bCc
 bnG
 bnG
-mSY
+bnG
 biy
 bEF
 bmc

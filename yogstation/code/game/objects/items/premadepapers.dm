@@ -1,12 +1,8 @@
-/**
-  *
-  *
-  * A General Request Form for things without a form
-  *
-  * That's literally it. 
-  * It's a subtype of paper, with written text already on it.
-  *
-  */
+//Paperwork pre-made edition. What a pain this was. Most of these were taken from the wiki.
+//fucking shitcode
+//REALLY BAD SHITCODE HOLY FUCK
+
+
 /obj/item/paper/paperwork/general_request_form
 	name = "General Requests Form (Form NT-010)"
 
@@ -24,14 +20,7 @@
 	update_icon()
 
 
-/**
-  *
-  * 
-  * A complaint form for tattling against coworkers
-  *
-  * A complaint form for tattling against coworkers. Tattling against coworkers form.
-  *
-  */
+//complaint form
 /obj/item/paper/paperwork/complaint_form
 	name = "Complaint Form (Form NT-021)"
 
@@ -55,14 +44,7 @@
 	written += new/datum/langtext("<br><hr><b>Stamp Below if Accepted:</b>",/datum/language/common)
 	update_icon()
 
-/**
-  *
-  * 
-  * A form for reporting incidents.
-  *
-  * A form exclusively used for reporting incidents.
-  *
-  */
+//incident report
 /obj/item/paper/paperwork/incident_report
 	name = "Incident Report (Form NT-400)"
 
@@ -103,14 +85,7 @@
 	written += new/datum/langtext("<b>Signed: </b>",/datum/language/common)
 	update_icon()
 
-/**
-  *
-  * 
-  * An incident form for security officers
-  *
-  * That's literally all it is. Security officers may use it to write about a situation.
-  *
-  */
+//security officer incident form
 /obj/item/paper/paperwork/sec_incident_report
 	name = "Security Incident Report (Form SEC-030)"
 
@@ -170,14 +145,8 @@
 	written += new/datum/langtext("<b>Reporting Officer's Signature</b><br>:",/datum/language/common)
 	update_icon()
 
-/**
-  *
-  * 
-  * A form for requesting an item.
-  *
-  * A form for requesting an item. Use this to request an item from somewhere. (I should give assistants access to this)
-  *
-  */
+//general item request form
+//TODO, prettier paperwork forms. Both code wise, and aesthetically. <-- heh, good luck with that, me. -Redd
 /obj/item/paper/paperwork/item_form
 	name = "Item Request Form (Form NT-089)"
 
@@ -204,14 +173,7 @@
 	update_icon()
 
 
-/**
-  *
-  * 
-  * A form signifying the signer consents to being borged.
-  *
-  * See short description.
-  *
-  */
+//cyborgization request form
 /obj/item/paper/paperwork/cyborg_request_form
 	name = "Cyborgization Consent Form (Form NT-203)"
 
@@ -238,14 +200,7 @@
 	written += new/datum/langtext("</u><hr><b>Roboticist Notes:</b>",/datum/language/common)
 	update_icon()
 
-/**
-  *
-  * 
-  * A form for requesting more access
-  *
-  * A form for requesting more access. The bane of assistants and annoying chaplains.
-  *
-  */
+//HOP access request form
 /obj/item/paper/paperwork/hopaccessrequestform
 	name = "HoP Access Request Form (Form NT-022)"
 
@@ -268,14 +223,7 @@
 	written += new/datum/langtext("<b>Stamp Below if Approved</b>",/datum/language/common)
 	update_icon()
 
-/**
-  *
-  * 
-  * A form for requesting a job change
-  *
-  * A form for requesting a job change. The bane of assistants.
-  *
-  */
+//HOP job request form
 /obj/item/paper/paperwork/hop_job_change_form
 	name = "Job Reassignment Form (Form NT-059)"
 
@@ -305,14 +253,7 @@
 	written += new/datum/langtext("<b>Stamp Below if Approved</b>",/datum/language/common)
 	update_icon()
 
-/**
-  *
-  * 
-  * A form for requesting something be researched.
-  *
-  * Do not use. Everyone will hate you.
-  *
-  */
+//RD request form
 /obj/item/paper/paperwork/rd_form
 	name = "R&D Request Form (Form SCI-3)"
 
@@ -333,15 +274,7 @@
 	update_icon()
 
 //RD upgrade form not included because from personal experience if you don't upgrade stuff you will be lynched
-
-/**
-  *
-  * 
-  * A form for requesting a mech.
-  *
-  * A form for requesting a mech. The bane of powergamers.
-  *
-  */
+//Mech request form
 /obj/item/paper/paperwork/mech_form
 	name = "R&D Mech Request Form (Form SCI-9)"
 
@@ -358,14 +291,7 @@
 	written += new/datum/langtext("<b>Stamp Below if Approved</b>",/datum/language/common)
 	update_icon()
 
-/**
-  *
-  * 
-  * A form for signifying someone got a job change.
-  *
-  * A form for signifying someone got a job change. Muh RP.
-  *
-  */
+//HMMM YES A JOB CHANGE CERTIFICATION
 /obj/item/paper/paperwork/jobchangecert
 	name = "Job Change Certificate"
 
@@ -388,30 +314,12 @@
 	written += new/datum/langtext("",/datum/language/common)
 	update_icon()
 
-//academy ruin papers
-
-/**
-  *
-  * 
-  * Papers that add flavor to the Wizard Academy
-  *
-  * These are flavor papers for spicing up the Wizard Academy Ruin
-  *
-  */
+//academy ruin paper
 /obj/item/paper/yog/ruins/academy
 	name = "Debug Paper"
 	desc = "Official Wizard Academy Mail"
 
 //in regards to trey being a lizard
-
-/**
-  *
-  * 
-  * A demonstration paper. See [Wizard Academy Ruins Papers.][/obj/item/paper/yog/ruins/academy]
-  *
-  * I wrote this paper as a way to try and add some more flavor to the wizard academy. See PR # 9229.
-  *
-  */
 /obj/item/paper/yog/ruins/academy/trey_wizard_lizard
 	name = "RE: Trey of the Shattered Voice"
 
@@ -428,41 +336,9 @@
 
 
 //clipboards
-
-/**
-  *
-  * 
-  * The baseline paperwork [clipboard.][/obj/item/clipboard]
-  *
-  * This is the default object.
-  * For the RD variant, [click here.][/obj/item/clipboard/yog/paperwork/rd]
-  * For the HoS variant, [click here.][/obj/item/clipboard/yog/paperwork/hos]
-  * For the Captain variant, [click here.][/obj/item/clipboard/yog/paperwork/captain]
-  * For the HoP variant, [click here.][/obj/item/clipboard/yog/paperwork/hop]
-  * For the Warden's variant, [click here.][/obj/item/clipboard/yog/paperwork/warden]
-  * For the CE's variant, [click here.][/obj/item/clipboard/yog/paperwork/ce]
-  * For the CMO's variant, [click here.][/obj/item/clipboard/yog/paperwork/cmo]
-  * For security officer's clipboards, [click here.][/obj/item/clipboard/yog/paperwork/security]
-  * For the admin variant, [click here.][/obj/item/clipboard/yog/paperwork/admin]
-  * 
-  */
 /obj/item/clipboard/yog/paperwork
 	name = "Paperwork"
 
-/**
-  * Initializes the RD's clipboard.
-  *
-  * Initializes the RD's clipboard and gives them the following:
-  * [Job Change Certificate][/obj/item/paper/paperwork/jobchangecert]
-  * [General Request Form][/obj/item/paper/paperwork/general_request_form]
-  * [Complaint Form][/obj/item/paper/paperwork/complaint_form]
-  * [Item Request Form][/obj/item/paper/paperwork/item_form]
-  * [Research Request Form][/obj/item/paper/paperwork/rd_form]
-  * [Mech Request Form][/obj/item/paper/paperwork/mech_form]
-  * [Cyborg Consent Form][/obj/item/paper/paperwork/cyborg_request_form]
-  * [HoP Access Request Form][/obj/item/paper/paperwork/hopaccessrequestform]
-  * [Incident Report Form][/obj/item/paper/paperwork/incident_report]
-  */
 /obj/item/clipboard/yog/paperwork/rd/Initialize()
 	. = ..()
 	name = "Paperwork (RD)"
@@ -478,18 +354,7 @@
 	toppaper = contents[contents.len]
 	update_icon()
 
-/**
-  * Initializes the Head of Security's clipboard.
-  *
-  * Initializes the Head of Security's clipboard and gives them the following:
-  * [Job Change Certificate][/obj/item/paper/paperwork/jobchangecert]
-  * [General Request Form][/obj/item/paper/paperwork/general_request_form]
-  * [Complaint Form][/obj/item/paper/paperwork/complaint_form]
-  * [Item Request Form][/obj/item/paper/paperwork/item_form]
-  * [HoP Access Request Form][/obj/item/paper/paperwork/hopaccessrequestform]
-  * [Incident Report Form][/obj/item/paper/paperwork/incident_report]
-  * [10 Security Incident Report Forms][/obj/item/paper/paperwork/sec_incident_report]
-  */
+
 /obj/item/clipboard/yog/paperwork/hos/Initialize()
 	. = ..()
 	name = "Paperwork (HoS)"
@@ -504,16 +369,7 @@
 	toppaper = contents[contents.len]
 	update_icon()
 
-/**
-  * Initializes the Captain's clipboard.
-  *
-  * Initializes the Captain's clipboard and gives them the following:
-  * [Job Change Certificate][/obj/item/paper/paperwork/jobchangecert]
-  * [General Request Form][/obj/item/paper/paperwork/general_request_form]
-  * [Complaint Form][/obj/item/paper/paperwork/complaint_form]
-  * [HoP Access Request Form][/obj/item/paper/paperwork/hopaccessrequestform]
-  * [Incident Report Form][/obj/item/paper/paperwork/incident_report]
-  */
+
 /obj/item/clipboard/yog/paperwork/captain/Initialize()
 	. = ..()
 	name = "Paperwork (Captain)"
@@ -525,17 +381,7 @@
 	toppaper = contents[contents.len]
 	update_icon()
 
-/**
-  * Initializes the Head of Personnels clipboard.
-  *
-  * Initializes the HoP's clipboard and gives them the following:
-  * [Job Change Certificate][/obj/item/paper/paperwork/jobchangecert]
-  * [General Request Form][/obj/item/paper/paperwork/general_request_form]
-  * [Complaint Form][/obj/item/paper/paperwork/complaint_form]
-  * [HoP Access Request Form][/obj/item/paper/paperwork/hopaccessrequestform]
-  * [HoP Job Change Request Form][/obj/item/paper/paperwork/hop_job_change_form]
-  * [Incident Report Form][/obj/item/paper/paperwork/incident_report]
-  */
+
 /obj/item/clipboard/yog/paperwork/hop/Initialize()
 	. = ..()
 	name = "Paperwork (HoP)"
@@ -544,21 +390,12 @@
 	new /obj/item/paper/paperwork/complaint_form(src)
 	new /obj/item/paper/paperwork/hopaccessrequestform(src)
 	new /obj/item/paper/paperwork/hop_job_change_form(src)
+	new /obj/item/paper/paperwork/hopaccessrequestform(src)
 	new /obj/item/paper/paperwork/incident_report(src)
 	toppaper = contents[contents.len]
 	update_icon()
 
-/**
-  * Initializes the Warden's clipboard.
-  *
-  * Initializes the Warden's clipboard and gives them the following:
-  * [General Request Form][/obj/item/paper/paperwork/general_request_form]
-  * [Complaint Form][/obj/item/paper/paperwork/complaint_form]
-  * [Item Request Form][/obj/item/paper/paperwork/item_form]
-  * [HoP Access Request Form][/obj/item/paper/paperwork/hopaccessrequestform]
-  * [Incident Report Form][/obj/item/paper/paperwork/incident_report]
-  * [10 Security Incident Report Forms][/obj/item/paper/paperwork/sec_incident_report]
-  */
+
 /obj/item/clipboard/yog/paperwork/warden/Initialize()
 	. = ..()
 	name = "Paperwork (Warden)"
@@ -572,17 +409,7 @@
 	toppaper = contents[contents.len]
 	update_icon()
 
-/**
-  * Initializes the Chief Engineer's clipboard.
-  *
-  * Initializes the Chief Engineer's clipboard and gives them the following:
-  * [Job Change Certificate][/obj/item/paper/paperwork/jobchangecert]
-  * [General Request Form][/obj/item/paper/paperwork/general_request_form]
-  * [Complaint Form][/obj/item/paper/paperwork/complaint_form]
-  * [Item Request Form][/obj/item/paper/paperwork/item_form]
-  * [HoP Access Request Form][/obj/item/paper/paperwork/hopaccessrequestform]
-  * [Incident Report Form][/obj/item/paper/paperwork/incident_report]
-  */
+
 /obj/item/clipboard/yog/paperwork/ce/Initialize()
 	. = ..()
 	name = "Paperwork (CE)"
@@ -595,17 +422,7 @@
 	toppaper = contents[contents.len]
 	update_icon()
 
-/**
-  * Initializes the Chief Medical Officer's clipboard.
-  *
-  * Initializes the Chief Medical Officer's clipboard and gives them the following:
-  * [Job Change Certificate][/obj/item/paper/paperwork/jobchangecert]
-  * [Complaint Form][/obj/item/paper/paperwork/complaint_form]
-  * [General Request Form][/obj/item/paper/paperwork/general_request_form]
-  * [Item Request Form][/obj/item/paper/paperwork/item_form]
-  * [HoP Access Request Form][/obj/item/paper/paperwork/hopaccessrequestform]
-  * [Incident Report Form][/obj/item/paper/paperwork/incident_report]
-  */
+
 /obj/item/clipboard/yog/paperwork/cmo/Initialize()
 	. = ..()
 	name = "Paperwork (CMO)"
@@ -618,13 +435,6 @@
 	toppaper = contents[contents.len]
 	update_icon()
 
-/**
-  * Initializes security officer clipboards.
-  *
-  * Initializes security officer clipboards and gives them the following:
-  * [10 Security Incident Report Forms][/obj/item/paper/paperwork/sec_incident_report]
-  * [10 Incident Report Forms][/obj/item/paper/paperwork/incident_report]
-  */
 /obj/item/clipboard/yog/paperwork/security/Initialize()
 	. = ..()
 	for (var/i in 1 to 10)
@@ -634,22 +444,7 @@
 	toppaper = contents[contents.len]
 	update_icon()
 
-/**
-  * Initializes the admin variant clipboard.
-  *
-  * Initializes the admin variant clipboard and provides the following:
-  * [General Request Form][/obj/item/paper/paperwork/general_request_form]
-  * [Complaint Form][/obj/item/paper/paperwork/complaint_form]
-  * [Incident Report Form][/obj/item/paper/paperwork/incident_report]
-  * [Security Incident Report Form][/obj/item/paperwork/sec_incident_report]
-  * [Item Request Form][/obj/item/paper/paperwork/item_form]
-  * [Cyborg Consent Form][/obj/item/paper/paperwork/cyborg_request_form]
-  * [HoP Access Request Form][/obj/item/paper/paperwork/hopaccessrequestform]
-  * [HoP Job Change Request Form][/obj/item/paper/paperwork/hop_job_change_form]
-  * [Research Request Form][/obj/item/paper/paperwork/rd_form]
-  * [Mech Request Form][/obj/item/paper/paperwork/mech_form]
-  * [Job Change Certificate][/obj/item/paper/paperwork/jobchangecert]
-  */
+//admin clipboard
 /obj/item/clipboard/yog/paperwork/admin/Initialize()
 	. = ..()
 	name = "Paperwork (AdminSpawn)"

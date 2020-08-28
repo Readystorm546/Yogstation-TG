@@ -16,7 +16,7 @@
 		AM.forceMove(hand_turf)
 		if(isliving(AM))
 			var/mob/living/L = AM
-			L.Knockdown(10)
+			L.Stun(10)
 	guardian.face_atom(hand_turf)
 	return ..()
 

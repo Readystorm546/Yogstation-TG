@@ -45,7 +45,6 @@ GLOBAL_VAR_INIT(dynamic_forced_threat_level, -1)
 	name = "dynamic mode"
 	config_tag = "dynamic"
 	report_type = "dynamic"
-	title_icon = "ss13"
 
 	announce_span = "danger"
 	announce_text = "Dynamic mode!" // This needs to be changed maybe

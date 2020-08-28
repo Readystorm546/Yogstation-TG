@@ -4,9 +4,9 @@
 	animate_movement = FORWARD_STEPS
 	anchored = TRUE
 	density = TRUE
-	var/moving = FALSE
+	var/moving = 0
 	var/datum/gas_mixture/air_contents = new()
-	var/cargo = FALSE
+
 
 /obj/structure/transit_tube_pod/Initialize()
 	. = ..()
